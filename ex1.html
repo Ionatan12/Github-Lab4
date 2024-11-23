@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <style>
+    body {
+      background-color: lightgreen;
+      font-family: Arial, sans-serif;
+      transition: all 0.5s ease;
+    }
+    h1, h2 {
+      color: darkblue;
+    }
+    table {
+      font-family: ALGERIAN, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    td, th {
+      border: 1px solid black;
+      text-align: left;
+      padding: 8px;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      transition: all 0.5s ease;
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+<h1>CV</h1>
+<p id="name">Nume si prenume : Tanasa Ionatan</p>
+<p>Email: tanasaionatan12@gmail.com</p>
+<p>Omul poate deveni om numai prin educaţie. El nu e nimic decât ceea ce face educaţia din el.</p>
+
+
+<h2>Tabel discipline</h2>
+
+<table>
+  <tr>
+    <th>Nume</th>
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>Programarea calculatoarelor si limbaje de programare - I</td>
+    <td>https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/04a.pdf</td>
+  </tr>
+  <tr>
+    <td>Componente si circuite pasive - I</td>
+    <td>https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/05a.pdf</td>
+  </tr>
+  <tr>
+    <td>Dispozitive electronice – I</td>
+    <td>https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/12a.pdf</td>
+  </tr>
+</table>
+
+<h2>Hobby-uri</h2>
+<ul>
+  <li>Tenis de masa</li>
+  <li>Enduro cross</li>
+  <li>Gaming</li>
+</ul>
+
+<!-- Butonul pentru schimbarea vieții -->
+<button onclick="schimbaViata()">Alta viata</button>
+
+<script>
+  function schimbaViata() {
+    // Schimbarea numelui si functiei
+    document.getElementById("name").textContent = "Poziție visată: Dezvoltator Software Senior la GOOGLE Company";
+    
+    // Modificarea secțiunii de educație/pasiuni
+    let hobbyuri = document.querySelector("h2 + ul");
+    hobbyuri.innerHTML = "<li>Dezvoltare software avansată</li><li>Inteligență artificială</li><li>Proiecte open-source</li>";
+    
+    // Modificarea stilului paginii (culoare de fundal și fonturi)
+    document.body.style.backgroundColor = "#2f4f4f";
+    document.body.style.color = "white";
+    
+   
+  }
+</script>
+
+</body>
+</html>
